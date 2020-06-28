@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Reciclador</string>
+    <string name="boton_Registraese1">Registrarse</string>
+    <string name="title_SR">Socio Reciclador</string>
+    <string name="nombre_usuario">Nombre de  Usuario</string>
+    <string name="Contraseña">Contraseña</string>
+    <string name="tvolvidaste">¿Olvidaste la Contraseña?</string>
+    <string name="RegistroUsuario">Registro de Usuario</string>
+    <string name="Callenum">Calle y Numeración</string>
+    <string name="Teléfono">Teléfono</string>
+    <string name="Comuna">Comuna</string>
+    <string name="Constraseña">ContraseÃ±a</string>
+    <string name="repetirContraseña">Repetir Contraseña</string>
+    <string name="Cancelar">Cancelar</string>
+    <string name="Crear">Crear</string>
+    <string name="Login">Login</string>
+
+</resources>
