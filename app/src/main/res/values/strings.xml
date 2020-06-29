@@ -24,5 +24,25 @@
     <string name="verificar">Verificar</string>
     <string name="codigorecuperacion">Código de recuperación</string>
     <string name="newpassword">Crea una nueva contraseña</string>
-
+    <string name="CrearSolicitudRecolección">Crear solicitud de recolección</string>
+    <string name="FechaRecolección">Fecha de Recoleccion</string>
+    <string name="HoraRecolección">Hora de Recoleccion</string>
+    <string name="IngresoFecha">Ingrese la fecha</string>
+    <string name="PesoTotal">Peso Total</string>
+    <string name="VolumenTotal">Volumen Total</string>
+    <string name="IngresePeso">Ingrese Peso</string>
+    <string name="IngresevolumenTotal">Ingrese Volumen </string>
+    <string name="Materiales">Materiales</string>
+    <string name="SeccioneMaterial">Seleccione Material</string>
+    <string name="SeleccioneCantidad">Indique Cantidad</string>
+    <string name="TipoMaterial">Tipo de Material</string>
+    <string name="IngreseTipo">Ingrese Tipo</string>
+    <string name="Anotar">Anotar</string>
+    <string name="Nombre">Nombre    :</string>
+    <string name="Apellido">Apellido  :</string>
+    <string name="Dirección">Dirección :</string>
+    <string name="Sexo">Sexo      :</string>
+    <string name="NumeroTe">Numero Teléfono : </string>
+    <string name="Correo">Correo Electronico :</string>
+    <string name="vacio">       </string>
 </resources>

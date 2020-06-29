@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/LL3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Plomo"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:drawable/sym_def_app_icon"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <TextView
+                android:id="@+id/TVtitle"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/CrearSolicitudRecolección"
+                android:textSize="25sp">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:id="@+id/SV1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LL3"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/RL1"
+                    android:layout_width="325dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/PlomoClaro">
+
+                    <LinearLayout
+                        android:id="@+id/LL4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/TV2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="@string/FechaRecolección"
+                            android:textColor="@color/colorNegro"></TextView>
+
+                        <EditText
+                            android:id="@+id/editText4"
+                            android:layout_width="153dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/TV2"
+                            android:background="@drawable/efect_et2"
+                            android:backgroundTint="@color/colorBlanco"
+                            android:hint="@string/IngresoFecha"
+                            android:inputType="date"
+                            android:padding="4dp">
+
+                        </EditText>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LL5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_toRightOf="@+id/LL4">
+
+                        <TextView
+                            android:id="@+id/TV3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="datetime"
+                            android:padding="8dp"
+                            android:text="@string/HoraRecolección"
+                            android:textColor="@color/colorNegro"></TextView>
+
+                        <EditText
+                            android:id="@+id/editText5"
+                            android:layout_width="153dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/TV2"
+                            android:background="@drawable/efect_et2"
+                            android:backgroundTint="@color/colorBlanco"
+                            android:hint="@string/IngresoFecha"
+                            android:inputType="date"
+                            android:padding="4dp">
+                        </EditText>
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/RL10"
+                    android:layout_width="325dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/RL1"
+                    android:background="@color/PlomoClaro">
+
+                    <LinearLayout
+                        android:id="@+id/LL10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/TV10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="@string/PesoTotal"
+
+                            android:textColor="@color/colorNegro"></TextView>
+
+                        <EditText
+                            android:id="@+id/editText10"
+                            android:layout_width="153dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/TV2"
+                            android:background="@drawable/efect_et2"
+                            android:backgroundTint="@color/colorBlanco"
+                            android:hint="@string/IngresePeso"
+                            android:inputType="numberDecimal"
+                            android:padding="4dp">
+
+                        </EditText>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LL11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_toRightOf="@+id/LL10">
+
+                        <TextView
+                            android:id="@+id/TV11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="@string/VolumenTotal"
+                            android:textColor="@color/colorNegro"></TextView>
+
+                        <EditText
+                            android:id="@+id/editText11"
+                            android:layout_width="153dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/TV11"
+                            android:background="@drawable/efect_et2"
+                            android:backgroundTint="@color/colorBlanco"
+                            android:hint="@string/IngresevolumenTotal"
+                            android:inputType="numberDecimal"
+                            android:padding="4dp">
+
+                        </EditText>
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/RL20"
+                    android:layout_width="325dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/RL10"
+                    android:background="@color/PlomoClaro">
+
+                    <TextView
+                        android:id="@+id/TV12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Materiales"
+                        style="@style/TextAppearance.AppCompat.Title">
+                    </TextView>
+
+                    <RelativeLayout
+                        android:id="@+id/RL21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/TV12"
+                        >
+
+                        <TextView
+                            android:id="@+id/TV13"
+                            android:layout_width="wrap_content"
+                            style="@style/Widget.AppCompat.TextView.SpinnerItem"
+                            android:layout_height="wrap_content"
+                            android:text="@string/SeccioneMaterial"
+
+                            android:padding="3dp">
+
+                        </TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/Widget.AppCompat.TextView.SpinnerItem"
+                            android:id="@+id/TV14"
+                            android:layout_below="@+id/TV13"
+                            android:padding="3dp"
+                            android:text="@string/TipoMaterial">
+
+                        </TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/Widget.AppCompat.TextView.SpinnerItem"
+                            android:id="@+id/TV15"
+                            android:layout_below="@+id/TV14"
+                            android:padding="3dp"
+                            android:text="@string/SeleccioneCantidad">
+
+                        </TextView>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/RL31"
+                        android:layout_width="180dp"
+                        android:layout_height="73dp"
+                        android:layout_below="@+id/TV12"
+                        android:layout_marginTop="1dp"
+                        android:layout_toRightOf="@+id/RL21"
+                        >
+
+                        <EditText
+                            android:id="@+id/et12"
+                            style="@style/TextAppearance.AppCompat.Caption"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:width="10dip"
+                            android:background="@drawable/efect_et2"
+                            android:inputType="text">
+
+
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/et13"
+                            style="@style/TextAppearance.AppCompat.Caption"
+                            android:layout_width="168dp"
+                            android:layout_height="28dp"
+                            android:layout_below="@+id/et12"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/efect_et2"
+                            android:inputType="text">
+
+
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/et14"
+                            style="@style/TextAppearance.AppCompat.Caption"
+                            android:layout_width="172dp"
+                            android:layout_height="29dp"
+                            android:layout_below="@+id/et13"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/efect_et2"
+                            android:inputType="number">
+
+                        </EditText>
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/RL32"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/RL21">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+
+                            <Button
+                                android:id="@+id/button3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Anotar"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/RL33"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/RL32">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp"
+                            android:background="@drawable/efect_et3">
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/RL20">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:background="@color/colorBlanco"
+                        android:gravity="center">
+                        <Button
+                            android:id="@+id/button4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Anotar"
+                            android:layout_gravity="center_vertical|center_horizontal" />
+                        <Button
+                            android:id="@+id/button5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Anotar"
+                            android:layout_gravity="center_vertical|center_horizontal" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
