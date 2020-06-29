@@ -14,5 +14,6 @@
     <string name="Cancelar">Cancelar</string>
     <string name="Crear">Crear</string>
     <string name="Login">Login</string>
+    <string name="todo">TODO</string>
 
 </resources>
