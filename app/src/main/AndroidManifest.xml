@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".InicioSesion"></activity>
+        <activity android:name=".NewPassword"></activity>
+        <activity android:name=".RecoverAccount" />
+        <activity android:name=".EnterCode" />
+        <activity android:name=".InicioSesion" />
         <activity android:name=".RegistroUsuario" />
         <activity android:name=".MainActivity">
             <intent-filter>

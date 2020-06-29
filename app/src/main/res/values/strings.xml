@@ -9,11 +9,20 @@
     <string name="Callenum">Calle y Numeración</string>
     <string name="Teléfono">Teléfono</string>
     <string name="Comuna">Comuna</string>
-    <string name="Constraseña">ContraseÃ±a</string>
+    <string name="Constraseña">Contraseña</string>
+    <string name="repeatpassword">Repetir Contraseña</string>
     <string name="repetirContraseña">Repetir Contraseña</string>
     <string name="Cancelar">Cancelar</string>
     <string name="Crear">Crear</string>
     <string name="Login">Login</string>
     <string name="todo">TODO</string>
+    <string name="correo_electronico">Correo electronico</string>
+    <string name="recuperar_cuenta">Indica tu correo para poder enviar el código con el cual podrás recuperar tu cuenta.</string>
+    <string name="recover_account">Recuperar Cuenta</string>
+    <string name="enviar">Enviar</string>
+    <string name="enter_code">Revisa tu correo e indique el código enviado. </string>
+    <string name="verificar">Verificar</string>
+    <string name="codigorecuperacion">Código de recuperación</string>
+    <string name="newpassword">Crea una nueva contraseña</string>
 
 </resources>
