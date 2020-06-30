@@ -27,7 +27,6 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="0"
         android:background="#D7FFCC"
         android:orientation="horizontal"
         android:paddingBottom="30px"
