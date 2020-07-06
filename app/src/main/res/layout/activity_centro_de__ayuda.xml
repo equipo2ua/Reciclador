@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroUsuario">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        android:id="@+id/RL1">
+
+        <RelativeLayout
+            android:id="@+id/RL2"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:id="@+id/TV1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="45dp"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/CentroAyuda"
+                android:textColor="@color/colorBlanco"
+                android:textSize="23sp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_alignLeft="@id/TV1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="356dp"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="@string/Icono"
+                android:src="@mipmap/ic_launcher" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/SV1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/RL2"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="685dp"
+                android:id="@+id/RL3"
+                android:paddingBottom="10dp"
+                android:background="@color/PlomoClaro">
+                <TextView
+                    android:id="@+id/TV2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/TitleCentroAyuda">
+                </TextView>
+
+                <RelativeLayout
+                    android:id="@+id/rl4"
+                    android:paddingRight="55sp"
+                    android:paddingLeft="55dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/TV2">
+
+                    <EditText
+                        android:id="@+id/et1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:autofillHints=""
+                        android:background="@drawable/efect_et2"
+                        android:backgroundTint="@color/colorBlanco"
+                        android:gravity="center_horizontal"
+                        android:hint="@string/txtayuda"
+                        android:inputType="text"
+                        android:padding="3dp"
+                        android:textColor="@color/colorNegro"
+                        android:textSize="22sp">
+
+                    </EditText>
+
+                    <ImageView
+                        android:layout_width="33dp"
+                        android:layout_height="28dp"
+                        android:layout_alignRight="@+id/et1"
+                        android:layout_marginRight="7dp"
+                        android:src="@drawable/lupa"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/Icono">
+
+                    </ImageView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RL5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl4"
+                    android:paddingLeft="55dp"
+                    android:paddingRight="55dp"
+                    android:backgroundTint="@color/colorBlanco"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="start"
+                        android:id="@+id/tvc1"
+                        android:text="@string/Sugerencias"
+                        android:paddingBottom="14dp"
+                        >
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="633dp"
+                        android:layout_height="403dp"
+                        android:layout_below="@id/tvc1"
+                        android:layout_marginTop="-14dp"
+                        android:background="@color/colorBlanco"
+                        android:backgroundTint="@color/colorBlanco"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="22dp"
+                            style="@style/CardView"
+                            android:text="@string/Linkedin"></TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="22dp"
+                            style="@style/CardView"
+                            android:text="@string/Linkedin"></TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="22dp"
+                            style="@style/CardView"
+                            android:text="@string/Linkedin"></TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="22dp"
+                            style="@style/CardView"
+                            android:text="@string/Linkedin"></TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="22dp"
+                            style="@style/CardView"
+                            android:text="@string/Linkedin"></TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="22dp"
+                            style="@style/CardView"
+                            android:text="@string/Linkedin"></TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="22dp"
+                            style="@style/CardView"
+                            android:text="@string/Linkedin"></TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="22dp"
+                            style="@style/CardView"
+                            android:text="@string/Linkedin"></TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="22dp"
+                            style="@style/CardView"
+                            android:text="@string/Linkedin"></TextView>
+
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/bt1"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/RL5"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="57dp"
+                    android:layout_marginStart="132dp"
+                    android:layout_marginEnd="127dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/Home">
+
+                </Button>
+            </RelativeLayout>
+
+
+
+
+
+        </ScrollView>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

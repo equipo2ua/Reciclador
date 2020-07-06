@@ -7,6 +7,7 @@
     tools:context=".RegistroUsuario">
 
 
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -75,7 +76,20 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:width="225dp"
-                    android:hint="@string/Nombre"
+                    android:hint="@string/Apellido"
+                    android:padding="5dp"
+                    android:inputType="text"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/efect_et2" />
+
+                <EditText
+                    android:id="@+id/etrut"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/etapellido"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:width="225dp"
+                    android:hint="@string/Rut"
                     android:padding="5dp"
                     android:inputType="text"
                     android:layout_centerHorizontal="true"
@@ -89,7 +103,7 @@
                     android:width="225dp"
                     android:hint="@string/Correo"
                     android:layout_centerInParent="true"
-                    android:layout_below="@id/etapellido"
+                    android:layout_below="@id/etrut"
                     android:padding="5dp"
                     android:inputType="number"
                     android:background="@drawable/efect_et2" />

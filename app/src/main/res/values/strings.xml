@@ -45,4 +45,15 @@
     <string name="NumeroTe">Numero Teléfono : </string>
     <string name="Correo">Correo Electronico :</string>
     <string name="vacio">       </string>
+    <string name="CentroAyuda">Centro de Ayuda</string>
+    <string name="Icono">Icono</string>
+    <string name="TitleCentroAyuda"> Hola ¿Como puedo ayudarte ?</string>
+    <string name="txtayuda">Ingrese pregunta</string>
+    <string name="Sugerencias">Preguntas comunes e informacion :</string>
+    <string name="Home">Home</string>
+    <string name="PerfilRecolector">Perfil Recolector</string>
+    <string name="Numero_pedidos">Numero de pedidos termiandos:</string>
+    <string name="Rut">Rut:</string>
+    <string name="Linkedin"><a href="http://www.bla.com">Ir a linkedin</a></string>
+
 </resources>
