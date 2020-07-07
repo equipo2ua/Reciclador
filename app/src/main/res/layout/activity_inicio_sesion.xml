@@ -22,8 +22,8 @@
                     android:layout_height="match_parent"
                     >
                     <LinearLayout
-                        android:layout_width="693dp"
-                        android:layout_height="729dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_gravity="center"
                         android:layout_marginTop="1dp"
                         android:layout_marginEnd="1dp"
@@ -103,11 +103,6 @@
 
 
                 </RelativeLayout>
-
-
-
         </ScrollView>
-
     </RelativeLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
