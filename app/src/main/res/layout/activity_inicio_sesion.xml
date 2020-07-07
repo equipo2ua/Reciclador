@@ -4,100 +4,110 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InicioSesion">
+    tools:context=".RegistroUsuario">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
 
-    <LinearLayout
-        android:layout_width="413dp"
-        android:layout_height="729dp"
-        android:background="#847D7D"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.364">
+        <ScrollView
+            android:id="@+id/SV1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent">
 
-
-        <LinearLayout
-            android:layout_width="401dp"
-            android:layout_height="729dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="1dp"
-            android:layout_marginEnd="1dp"
-            android:background="#FFFFFF"
-            android:orientation="vertical">
-
-
-            <Button
-                android:id="@+id/button"
-                android:layout_width="147dp"
-                android:layout_height="34dp"
-                android:layout_gravity="end"
-                android:layout_marginTop="66dp"
-                android:background="#0000"
-                android:onClick="onclicResgistrarusuario"
-                android:text="@string/boton_Registraese1" />
-
-            <TextView
-                android:id="@+id/textView4"
-                style="@android:style/Widget.TextView.SpinnerItem"
-                android:layout_width="240dp"
-                android:layout_height="52dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="33dp"
-                android:text="@string/title_SR"
-                android:textSize="30sp" />
-
-            <EditText
-                android:id="@+id/editText2"
-                android:layout_width="300dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="43dp"
-                android:autofillHints=""
-                android:background="@drawable/efect_et2"
-                android:ems="10"
-                android:hint="@string/nombre_usuario"
-                android:inputType="textPersonName"
-                android:padding="5dp"
-                android:textAlignment="center" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <LinearLayout
+                        android:layout_width="693dp"
+                        android:layout_height="729dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:background="#FFFFFF"
+                        android:orientation="vertical">
 
 
-            <EditText
-                android:id="@+id/editText3"
-                android:layout_width="300dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="33dp"
-                android:autofillHints=""
-                android:background="@drawable/efect_et2"
-                android:ems="10"
-                android:hint="@string/Contraseña"
-                android:inputType="textPassword"
-                android:textAlignment="center" />
+                        <Button
+                            android:id="@+id/button"
+                            android:layout_width="147dp"
+                            android:layout_height="34dp"
+                            android:layout_gravity="end"
+                            android:layout_marginTop="66dp"
+                            android:background="#0000"
+                            android:text="@string/boton_Registraese1" />
 
-            <Button
-                android:id="@+id/button2"
-                style="@style/Widget.AppCompat.Button"
-                android:layout_width="249dp"
-                android:layout_height="34dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="19dp"
-                android:background="#0000"
-                android:text="@string/tvolvidaste" />
+                        <TextView
+                            android:id="@+id/textView4"
+                            style="@android:style/Widget.TextView.SpinnerItem"
+                            android:layout_width="240dp"
+                            android:layout_height="52dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="33dp"
+                            android:text="@string/title_SR"
+                            android:textSize="30sp" />
 
-            <Button
-                android:id="@+id/button4"
-                android:layout_width="50dp"
-                android:layout_height="48dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="50dp"
-                android:background="@drawable/bt1_efecto" />
+                        <EditText
+                            android:id="@+id/editText2"
+                            android:layout_width="300dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="43dp"
+                            android:autofillHints=""
+                            android:background="@drawable/efect_et2"
+                            android:ems="10"
+                            android:hint="@string/nombre_usuario"
+                            android:inputType="textPersonName"
+                            android:padding="5dp"
+                            android:textAlignment="center" />
 
 
-        </LinearLayout>
+                        <EditText
+                            android:id="@+id/editText3"
+                            android:layout_width="300dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="33dp"
+                            android:autofillHints=""
+                            android:background="@drawable/efect_et2"
+                            android:ems="10"
+                            android:hint="@string/Contraseña"
+                            android:inputType="textPassword"
+                            android:textAlignment="center" />
+
+                        <Button
+                            android:id="@+id/button2"
+                            style="@style/Widget.AppCompat.Button"
+                            android:layout_width="249dp"
+                            android:layout_height="34dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="19dp"
+                            android:background="#0000"
+                            android:text="@string/tvolvidaste" />
+
+                        <Button
+                            android:id="@+id/button4"
+                            android:layout_width="50dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="50dp"
+                            android:background="@drawable/bt1_efecto" />
 
 
-    </LinearLayout>
+                    </LinearLayout>
+
+
+
+
+                </RelativeLayout>
+
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
