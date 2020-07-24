@@ -7,15 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
+    Intent intencion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
-    public void onclicInisioSesion(View view){
-        Intent siguiente = new Intent(this, InicioSesion.class);
-        startActivity(siguiente);
 
+        Intent intencion = new Intent(MainActivity.this, InicioSesion.class);
+        startActivity(intencion);
     }
 }

@@ -13,7 +13,6 @@
         android:text="@string/Login"
         tools:layout_editor_absoluteX="307dp"
         tools:layout_editor_absoluteY="18dp"
-        tools:ignore="MissingConstraints"
-        android:onClick="onclicInisioSesion"/>
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
