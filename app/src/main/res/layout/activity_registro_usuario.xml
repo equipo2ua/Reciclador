@@ -132,6 +132,8 @@
                     android:inputType="text"
                     android:background="@drawable/efect_et2"
                     android:autofillHints="" />
+
+
                 <EditText
                     android:id="@+id/comuna"
                     android:layout_width="wrap_content"

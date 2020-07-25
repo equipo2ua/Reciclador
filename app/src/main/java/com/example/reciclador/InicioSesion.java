@@ -82,7 +82,7 @@ public class InicioSesion extends AppCompatActivity {
                         public void onResponse(Call<List> call, Response<List> response) {
                             if (response.isSuccessful()){
                                 Log.d("Funciona",""+response.body());
-                                Toast.makeText(InicioSesion.this, "Funciona", Toast.LENGTH_LONG);
+                                Toast.makeText(InicioSesion.this, "Bienvenido Reciclador", Toast.LENGTH_LONG);
                             }
 
                         }
@@ -90,7 +90,7 @@ public class InicioSesion extends AppCompatActivity {
                         @Override
                         public void onFailure(Call<List> call, Throwable t) {
                             Log.d("Ta Malito",""+t);
-                            Toast.makeText(InicioSesion.this, "Ta Malito", Toast.LENGTH_LONG);
+                            Toast.makeText(InicioSesion.this, "Tu solicitud de ingreso no fue posible, por favor verifique los datos", Toast.LENGTH_LONG);
                         }
                     });
 
