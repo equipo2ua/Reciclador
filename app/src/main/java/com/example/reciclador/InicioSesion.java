@@ -24,17 +24,25 @@ import retrofit2.Response;
 public class InicioSesion extends AppCompatActivity {
 
     Button botonlogin;
+    Button registrarse;
+    Button olvidarpassword;
     EditText nombre;
     EditText contraseña;
+    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicio_sesion);
 
-        Log.d("Funciona","XDDDDD");
         botonlogin = (Button)findViewById(R.id.button4);
         botonlogin.setOnClickListener(listen);
+
+        registrarse = (Button)findViewById(R.id.button);
+        registrarse.setOnClickListener(listen);
+
+        olvidarpassword = (Button)findViewById(R.id.button2);
+        olvidarpassword.setOnClickListener(listen);
 
 
     }
@@ -42,8 +50,18 @@ public class InicioSesion extends AppCompatActivity {
     final View.OnClickListener listen = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Toast.makeText(InicioSesion.this, "En el OnClick", Toast.LENGTH_LONG);
+
             switch (v.getId()){
+                case R.id.button:
+                    intent = new Intent(InicioSesion.this, RegistroUsuario.class);
+                    startActivity(intent);
+                    break;
+
+                case R.id.button2:
+                    intent = new Intent(InicioSesion.this, EnterCode.class);
+                    startActivity(intent);
+                    break;
+
                 case R.id.button4:
                     Toast.makeText(InicioSesion.this, "Llegamos al Switch", Toast.LENGTH_LONG);
 
@@ -51,7 +69,10 @@ public class InicioSesion extends AppCompatActivity {
                     nombre = (EditText)findViewById(R.id.editText2);
                     contraseña = (EditText)findViewById(R.id.editText3);
 
-                    LoginData logindata = new LoginData(nombre.getText().toString(), contraseña.getText().toString());
+                    LoginData logindata = new LoginData(
+                            nombre.getText().toString(),
+                            contraseña.getText().toString()
+                    );
 
                     // creamos la llamada
                     Call<List> llamada = ApiAdapter.getApiService().iniciar_sesion("Basic bWF0aWFzdWE6bWF0aTc3", logindata);

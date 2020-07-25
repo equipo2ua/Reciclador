@@ -98,6 +98,7 @@
 
 
                             <Button
+                                android:id="@+id/e_c_cancelar"
                                 android:layout_width="104dp"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
@@ -107,6 +108,7 @@
                                 tools:ignore="ButtonStyle" />
 
                             <Button
+                                android:id="@+id/e_c_enviar"
                                 android:layout_width="108dp"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
