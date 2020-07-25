@@ -12,9 +12,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_visualizar_perfil);
 
         Intent intencion = new Intent(MainActivity.this, InicioSesion.class);
-        startActivity(intencion);
+        //startActivity(intencion);
     }
 }

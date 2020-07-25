@@ -9,6 +9,6 @@ public class Visualizar_Perfil_Recolector extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_visualizar__perfil__recolector);
+        setContentView(R.layout.activity_visualizar_perfil);
     }
 }
