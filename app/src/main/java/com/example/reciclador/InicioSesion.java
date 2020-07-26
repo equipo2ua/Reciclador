@@ -75,7 +75,7 @@ public class InicioSesion extends AppCompatActivity {
                     );
 
                     // creamos la llamada
-                    Call<List> llamada = ApiAdapter.getApiService().iniciar_sesion("Basic bWF0aWFzdWE6bWF0aTc3", logindata);
+                    Call<List> llamada = ApiAdapter.getApiService().detalle_perfil_rest("basic QWx2YXJvQ29kaWdvOjEyMjMzMw==", logindata);
 
                     llamada.enqueue(new Callback<List>() {
                         @Override
@@ -83,6 +83,9 @@ public class InicioSesion extends AppCompatActivity {
                             if (response.isSuccessful()){
                                 Log.d("Funciona",""+response.body());
                                 Toast.makeText(InicioSesion.this, "Bienvenido Reciclador", Toast.LENGTH_LONG);
+
+                                Intent intentperfil =new Intent(InicioSesion.this, VisualizarPerfil.class );
+                                startActivity(intentperfil);
                             }
 
                         }

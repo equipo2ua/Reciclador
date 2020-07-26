@@ -7,6 +7,7 @@ import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
+import retrofit2.http.GET;
 import retrofit2.http.Header;
 import retrofit2.http.POST;
 
@@ -17,4 +18,8 @@ public interface ApiService {
 
     @POST("data_api/")
     Call<List> Registro_Reciclador(@Header("Authorization") String Authorization, @Body DataRegistroUsuario RegistroUsuario);
+
+    @POST("detalle_perfil_rest/")
+    Call<List> detalle_perfil_rest(@Header("Authorization")String Authorization, @Body LoginData logindata );
+
 }
