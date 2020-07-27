@@ -10,7 +10,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_color"
         tools:ignore="MissingConstraints"
         android:id="@+id/RL0">
 
@@ -44,14 +45,16 @@
 
         </RelativeLayout>
         <ScrollView
+
             android:id="@+id/SV0"
             android:layout_below="@+id/RL1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical"
             app:layout_constraintTop_toTopOf="parent">
 
             <RelativeLayout
+                android:paddingTop="30dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/RL2">
@@ -177,6 +180,7 @@
 
                 <LinearLayout
                     android:id="@+id/LL2botones"
+                    android:paddingTop="44dp"
                     android:layout_width="615dp"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/repetirContraseña"
@@ -187,6 +191,7 @@
                     android:orientation="horizontal">
 
                     <Button
+                        android:paddingTop="22dp"
                         android:id="@+id/cancelar"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -194,6 +199,7 @@
                         android:padding="5dp"
                         android:width="100dp"
                         android:layout_marginTop="2dp"
+                        android:background="@drawable/bg_color2"
                         android:text="Cancelar" />
 
                     <Button
@@ -203,6 +209,7 @@
                         android:padding="5dp"
                         android:width="100dp"
                         android:layout_marginTop="2dp"
+                        android:background="@drawable/bg_color2"
                         android:text="Registrarse" />
 
 

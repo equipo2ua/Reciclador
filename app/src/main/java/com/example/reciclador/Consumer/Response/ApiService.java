@@ -13,10 +13,10 @@ import retrofit2.http.POST;
 
 public interface ApiService {
 
-    @POST ("data_api/")
+    @POST ("detalle_perfil_rest/")
     Call<List> iniciar_sesion(@Header("Authorization") String Authorization, @Body LoginData logindata);
 
-    @POST("data_api/")
+    @POST("reciclador_data1/")
     Call<List> Registro_Reciclador(@Header("Authorization") String Authorization, @Body DataRegistroUsuario RegistroUsuario);
 
     @POST("detalle_perfil_rest/")
