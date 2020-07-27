@@ -14,6 +14,7 @@ import android.widget.Toast;
 import com.example.reciclador.Consumer.Model.LoginData;
 import com.example.reciclador.Consumer.Response.ApiAdapter;
 import com.example.reciclador.Consumer.Response.ApiService;
+import com.google.gson.Gson;
 
 import java.util.List;
 
@@ -75,7 +76,7 @@ public class InicioSesion extends AppCompatActivity {
                     );
 
                     // creamos la llamada
-                    Call<List> llamada = ApiAdapter.getApiService().detalle_perfil_rest("basic QWx2YXJvQ29kaWdvOjEyMjMzMw==", logindata);
+                    Call<List> llamada = ApiAdapter.getApiService().detalle_perfil_rest("basic bWF0aWFzdWE6bWF0aTc3", logindata);
 
                     llamada.enqueue(new Callback<List>() {
                         @Override
@@ -84,8 +85,19 @@ public class InicioSesion extends AppCompatActivity {
                                 Log.d("Funciona",""+response.body());
                                 Toast.makeText(InicioSesion.this, "Bienvenido Reciclador", Toast.LENGTH_LONG);
 
+                                List data = response.body();
+
+                                //
+                                Gson gson = new Gson();
+                                String datajson = gson.toJson(data);
+
+
                                 Intent intentperfil =new Intent(InicioSesion.this, VisualizarPerfil.class );
+                                Bundle extras = new Bundle();
+                                extras.putString("Reciclador", datajson);
+                                intentperfil.putExtra("NombreReciclador", extras );
                                 startActivity(intentperfil);
+
                             }
 
                         }

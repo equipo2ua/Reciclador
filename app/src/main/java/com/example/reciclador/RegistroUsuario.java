@@ -74,7 +74,7 @@ public class RegistroUsuario extends AppCompatActivity {
 
                     );
 
-                    Call<List> llamada = ApiAdapter.getApiService().Registro_Reciclador("basic QWx2YXJvQ29kaWdvOjEyMjMzMw==",RegistroUsuario);
+                    Call<List> llamada = ApiAdapter.getApiService().Registro_Reciclador("basic bWF0aWFzdWE6bWF0aTc3",RegistroUsuario);
                     llamada.enqueue(new Callback<List>() {
                         @Override
                         public void onResponse(Call<List> call, Response<List> response) {
