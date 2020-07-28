@@ -110,24 +110,22 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="5dp"
+                            android:paddingBottom="5dp"
                             android:text=" "
                             android:textSize="15sp"></TextView>
                         <TextView
                             android:id="@+id/tvtxt3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:padding="5dp"
-                            android:textStyle="bold"
-                            android:text="@string/Dirección"
+                            android:text=" "
                             android:textSize="17sp"></TextView>
 
                         <TextView
                             android:id="@+id/tv003"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:padding="5dp"
                             android:text=" "
-                            android:textSize="15sp"></TextView>
+                            android:textSize="1sp"></TextView>
                         <TextView
                             android:id="@+id/tvtxt4"
                             android:layout_width="wrap_content"
