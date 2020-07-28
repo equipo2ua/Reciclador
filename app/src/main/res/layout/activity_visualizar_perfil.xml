@@ -34,10 +34,11 @@
 
             </ImageView>
         </LinearLayout>
+
         <ScrollView
             android:id="@+id/SV1"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_below="@+id/LL3"
             android:orientation="vertical"
             app:layout_constraintTop_toTopOf="parent">
@@ -45,7 +46,7 @@
             <RelativeLayout
                 android:id="@+id/RL1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent">
 
                 <ImageView
                     android:id="@+id/imageView"
@@ -60,17 +61,17 @@
                     android:id="@+id/imageView3"
                     android:layout_width="wrap_content"
                     android:layout_height="80dp"
-                    android:src="@drawable/estrella"
+                    android:layout_below="@+id/imageView"
                     android:layout_centerHorizontal="true"
-                    android:layout_below="@+id/imageView"/>
+                    android:src="@drawable/estrella" />
 
 
                 <LinearLayout
                     android:id="@+id/LL001"
                     android:layout_width="365dp"
-                    android:layout_centerHorizontal="true"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/imageView3"
+                    android:layout_centerHorizontal="true"
                     android:layout_marginTop="25dp"
                     android:orientation="horizontal">
 
@@ -80,14 +81,15 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/imageView3"
                         android:orientation="vertical">
+
                         <TextView
                             android:id="@+id/tvtxt1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="5dp"
-                            android:textStyle="bold"
                             android:text="@string/Nombre"
-                            android:textSize="17sp"></TextView>
+                            android:textSize="17sp"
+                            android:textStyle="bold"></TextView>
 
                         <TextView
                             android:id="@+id/tv001"
@@ -96,44 +98,32 @@
                             android:padding="5dp"
                             android:text=" "
                             android:textSize="15sp"></TextView>
+
                         <TextView
                             android:id="@+id/tvtxt2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="5dp"
-                            android:textStyle="bold"
                             android:text="@string/Apellido"
-                            android:textSize="17sp"></TextView>
+                            android:textSize="17sp"
+                            android:textStyle="bold"></TextView>
 
                         <TextView
                             android:id="@+id/tv002"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="5dp"
-                            android:paddingBottom="5dp"
                             android:text=" "
                             android:textSize="15sp"></TextView>
-                        <TextView
-                            android:id="@+id/tvtxt3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text=" "
-                            android:textSize="17sp"></TextView>
 
-                        <TextView
-                            android:id="@+id/tv003"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text=" "
-                            android:textSize="1sp"></TextView>
                         <TextView
                             android:id="@+id/tvtxt4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="5dp"
-                            android:textStyle="bold"
                             android:text="@string/Rut"
-                            android:textSize="17sp"></TextView>
+                            android:textSize="17sp"
+                            android:textStyle="bold"></TextView>
 
                         <TextView
                             android:id="@+id/tv004"
@@ -142,14 +132,15 @@
                             android:padding="5dp"
                             android:text=" "
                             android:textSize="15sp"></TextView>
+
                         <TextView
                             android:id="@+id/tvtxt5"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="5dp"
-                            android:textStyle="bold"
                             android:text="@string/NumeroTe"
-                            android:textSize="17sp"></TextView>
+                            android:textSize="17sp"
+                            android:textStyle="bold"></TextView>
 
                         <TextView
                             android:id="@+id/tv005"
@@ -164,9 +155,9 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="5dp"
-                            android:textStyle="bold"
                             android:text="@string/Correo"
-                            android:textSize="17sp"></TextView>
+                            android:textSize="17sp"
+                            android:textStyle="bold"></TextView>
 
 
                         <TextView
@@ -180,21 +171,23 @@
                     </LinearLayout>
 
                 </LinearLayout>
+
                 <Button
-                    android:layout_marginTop="22dp"
-                    android:layout_centerHorizontal="true"
-                    android:layout_below="@+id/LL001"
                     android:id="@+id/button6"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
-                    android:textSize="10sp"
+                    android:layout_below="@+id/LL001"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="161dp"
+                    android:layout_marginBottom="0dp"
                     android:background="@drawable/bt_dos"
-                    android:text="@string/Home" />
-
+                    android:text="@string/Home"
+                    android:textSize="10sp" />
 
 
             </RelativeLayout>
-
 
 
         </ScrollView>

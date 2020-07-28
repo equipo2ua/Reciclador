@@ -76,7 +76,7 @@ public class InicioSesion extends AppCompatActivity {
                     );
 
                     // creamos la llamada
-                    Call<List> llamada = ApiAdapter.getApiService().detalle_perfil_rest("basic QWx2YXJvQ29kaWdvOjEyMjMzMw==", logindata);
+                    Call<List> llamada = ApiAdapter.getApiService().detalle_perfil_rest("basic YW5kcmVzOmVudGVyc2FuZG1hbjU5", logindata);
 
                     llamada.enqueue(new Callback<List>() {
                         @Override

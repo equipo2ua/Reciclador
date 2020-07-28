@@ -21,7 +21,6 @@ public class VisualizarPerfil extends AppCompatActivity {
 
     private TextView tv001_;
     private TextView tv002_;
-    private TextView tv003_;
     private TextView tv004_;
     private TextView tv005_;
     private TextView tv006_;
@@ -34,7 +33,6 @@ public class VisualizarPerfil extends AppCompatActivity {
 
         tv001_ = findViewById(R.id.tv001);
         tv002_ = findViewById(R.id.tv002);
-        tv003_ = findViewById(R.id.tv003);
         tv004_ = findViewById(R.id.tv004);
         tv005_ = findViewById(R.id.tv005);
         tv006_ = findViewById(R.id.tv006);

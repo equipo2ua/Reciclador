@@ -75,7 +75,7 @@
                 android:layout_height="30dp"
                 android:textColor="@drawable/txt_bt2"
                 android:background="@drawable/bt_dos"
-                android:text="@string/Ingresar"
+                android:text="@string/Login"
                 />
 
             <Button
