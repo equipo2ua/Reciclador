@@ -46,7 +46,13 @@ public class VisualizarPerfil extends AppCompatActivity {
         String datos = bundle.getString("NombreReciclador");
         Type type = new TypeToken<ArrayList<DeserealizarPerfil>>(){}.getType();
         ArrayList<DeserealizarPerfil> items = gson.fromJson(datos, type);
-        Log.d("items", ""+ items);
+
+        tv001_.setText(items.get(0).getNombre_reciclador());
+        tv002_.setText(items.get(0).getApellido_reciclador());
+        tv004_.setText(items.get(0).getRut_reciclador());
+        String b = String.valueOf(items.get(0).getTelefono_reciclador());
+        tv005_.setText(b);
+        tv006_.setText(items.get(0).getCorreo_reciclador());
 
         //DeserealizarPerfil lista = gson.fromJson(getIntent().getExtras().getString("NombreReciclador"), DeserealizarPerfil.class);
         //Log.d("Lista",""+getIntent().getExtras().getString("NombreReciclador"));

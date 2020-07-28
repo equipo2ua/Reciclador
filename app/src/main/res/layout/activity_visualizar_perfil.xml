@@ -17,10 +17,9 @@
         <LinearLayout
             android:id="@+id/LL3"
             android:layout_width="match_parent"
-            android:layout_height="46dp"
+            android:layout_height="60dp"
             android:layout_alignParentStart="true"
             android:layout_marginStart="0dp"
-            android:background="@color/Plomo"
             android:orientation="vertical"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -29,7 +28,8 @@
                 android:id="@+id/imageView2"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:padding="2dp"
+                android:layout_margin="10dp"
+                android:padding="5dp"
                 android:src="@drawable/registro">
 
             </ImageView>
@@ -80,53 +80,103 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/imageView3"
                         android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tvtxt1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:textStyle="bold"
+                            android:text="@string/Nombre"
+                            android:textSize="17sp"></TextView>
 
                         <TextView
                             android:id="@+id/tv001"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="5dp"
-                            android:text="@string/Nombre"
+                            android:text=" "
                             android:textSize="15sp"></TextView>
+                        <TextView
+                            android:id="@+id/tvtxt2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:textStyle="bold"
+                            android:text="@string/Apellido"
+                            android:textSize="17sp"></TextView>
 
                         <TextView
                             android:id="@+id/tv002"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="5dp"
-                            android:text="@string/Apellido"
+                            android:text=" "
                             android:textSize="15sp"></TextView>
+                        <TextView
+                            android:id="@+id/tvtxt3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:textStyle="bold"
+                            android:text="@string/Dirección"
+                            android:textSize="17sp"></TextView>
 
                         <TextView
                             android:id="@+id/tv003"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="5dp"
-                            android:text="@string/Dirección"
+                            android:text=" "
                             android:textSize="15sp"></TextView>
+                        <TextView
+                            android:id="@+id/tvtxt4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:textStyle="bold"
+                            android:text="@string/Rut"
+                            android:textSize="17sp"></TextView>
 
                         <TextView
                             android:id="@+id/tv004"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="5dp"
-                            android:text="@string/Rut"
+                            android:text=" "
                             android:textSize="15sp"></TextView>
+                        <TextView
+                            android:id="@+id/tvtxt5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:textStyle="bold"
+                            android:text="@string/NumeroTe"
+                            android:textSize="17sp"></TextView>
 
                         <TextView
                             android:id="@+id/tv005"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="5dp"
-                            android:text="@string/NumeroTe"
+                            android:text=" "
                             android:textSize="15sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/tvtxt6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:textStyle="bold"
+                            android:text="@string/Correo"
+                            android:textSize="17sp"></TextView>
+
 
                         <TextView
                             android:id="@+id/tv006"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="5dp"
-                            android:text="@string/Correo"
+                            android:text=" "
                             android:textSize="15sp"></TextView>
 
                     </LinearLayout>
@@ -140,6 +190,7 @@
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:textSize="10sp"
+                    android:background="@drawable/bt_dos"
                     android:text="@string/Home" />
 
 

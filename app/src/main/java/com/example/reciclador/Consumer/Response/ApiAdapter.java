@@ -22,7 +22,7 @@ public class ApiAdapter {
         OkHttpClient.Builder httpClient = new OkHttpClient.Builder();
         httpClient.addInterceptor(logging);
 
-        String baseUrl = "http://192.168.1.120:8000/reciclador/";
+        String baseUrl = "http://192.168.43.6:8000/reciclador/";
 
         if (API_SERVICE == null) {
             Retrofit retrofit = new Retrofit.Builder()

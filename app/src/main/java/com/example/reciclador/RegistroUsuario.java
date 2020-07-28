@@ -36,6 +36,7 @@ public class RegistroUsuario extends AppCompatActivity {
         botoncancelar.setOnClickListener(Listen);
     }
 
+
     View.OnClickListener Listen = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -74,7 +75,7 @@ public class RegistroUsuario extends AppCompatActivity {
 
                     );
 
-                    Call<List> llamada = ApiAdapter.getApiService().Registro_Reciclador("basic bWF0aWFzdWE6bWF0aTc3",RegistroUsuario);
+                    Call<List> llamada = ApiAdapter.getApiService().Registro_Reciclador("basic QWx2YXJvQ29kaWdvOjEyMjMzMw==",RegistroUsuario);
                     llamada.enqueue(new Callback<List>() {
                         @Override
                         public void onResponse(Call<List> call, Response<List> response) {
@@ -87,7 +88,6 @@ public class RegistroUsuario extends AppCompatActivity {
                             }
 
                         }
-
                         @Override
                         public void onFailure(Call<List> call, Throwable t) {
                             Log.d("FalloLaLlamada", ""+t);
