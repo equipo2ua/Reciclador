@@ -2,14 +2,19 @@ package com.example.reciclador;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Adapter;
 import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.reciclador.Consumer.Model.DeserealizarPerfil;
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
+import java.lang.reflect.Type;
+import java.util.ArrayList;
 import java.util.List;
 
 public class VisualizarPerfil extends AppCompatActivity {
@@ -36,15 +41,14 @@ public class VisualizarPerfil extends AppCompatActivity {
 
 
 
+        Bundle bundle = this.getIntent().getExtras();
         Gson gson = new Gson();
-        DeserealizarPerfil lista = gson.fromJson(getIntent().getExtras().getString("NombreReciclador"), DeserealizarPerfil.class);
-        Log.d("Lista",""+getIntent().getExtras().getString("NombreReciclador"));
+        String datos = bundle.getString("NombreReciclador");
+        Type type = new TypeToken<ArrayList<DeserealizarPerfil>>(){}.getType();
+        ArrayList<DeserealizarPerfil> items = gson.fromJson(datos, type);
+        Log.d("items", ""+ items);
 
-            tv001_.setText(lista.getNombre_reciclador());
-            tv002_.setText(lista.getApellido_reciclador());
-            tv004_.setText(lista.getRut_reciclador());
-            tv005_.setText(lista.getTelefono_reciclador());
-            tv006_.setText(lista.getCorreo_reciclador());
-
+        //DeserealizarPerfil lista = gson.fromJson(getIntent().getExtras().getString("NombreReciclador"), DeserealizarPerfil.class);
+        //Log.d("Lista",""+getIntent().getExtras().getString("NombreReciclador"));
     }
 }

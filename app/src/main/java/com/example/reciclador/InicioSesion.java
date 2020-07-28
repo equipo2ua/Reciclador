@@ -84,18 +84,14 @@ public class InicioSesion extends AppCompatActivity {
                             if (response.isSuccessful()){
                                 Log.d("Funciona",""+response.body());
                                 Toast.makeText(InicioSesion.this, "Bienvenido Reciclador", Toast.LENGTH_LONG);
-
                                 List data = response.body();
 
-                                //
                                 Gson gson = new Gson();
                                 String datajson = gson.toJson(data);
-
+                                Log.d("datajson", datajson);
 
                                 Intent intentperfil =new Intent(InicioSesion.this, VisualizarPerfil.class );
-                                Bundle extras = new Bundle();
-                                extras.putString("Reciclador", datajson);
-                                intentperfil.putExtra("NombreReciclador", extras );
+                                intentperfil.putExtra("NombreReciclador", datajson );
                                 startActivity(intentperfil);
 
                             }
